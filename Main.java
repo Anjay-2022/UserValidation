@@ -15,7 +15,7 @@ public class Main {
 		while (run) {
 			System.out.println(
 
-					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.E_MAIL\n4.EXIT");
+					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.E_MAIL\n4.MOBILE NUMBER\n5.EXIT");
 
 			int option = sc.nextInt();
 			switch (option) {
@@ -30,7 +30,10 @@ public class Main {
 				break;
 			case 4:
 
-				run = false;
+				user.checkmobileno();
+				break;
+			case 5:
+	 			run = false;
 				break;
 			default:
 				System.out.println("choose correct option");

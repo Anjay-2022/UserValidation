@@ -53,4 +53,20 @@ public class User {
 
 
 	
+
+	public void checkmobileno() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER MOBILE NUMBER  FOR VALIDATION");
+		System.out.println("(It should be in format of 'Mobile Format - E.g. +919919819801\r\n"
+				+ "Country code follow by 10 digit number')");
+		String mobile = sc.nextLine();
+		String format = "^[+](91)\\s[6-9][0-9]{9}$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher mobilematch = pattern.matcher(mobile);
+		if (mobilematch.matches()) {
+			System.out.println("MOBILE NUMBER SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
 }
