@@ -51,7 +51,7 @@ public class User {
 			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
 	}
 
-	s
+
 
 	public void checkmobileno() {
 		Scanner sc = new Scanner(System.in);
