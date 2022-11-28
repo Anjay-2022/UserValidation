@@ -22,5 +22,34 @@ public class User {
 			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
 	}
 
+	public void checklastName() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER LAST NAME FOR VALIDATION");
+		System.out.println("(It should be in format of 'First name starts with Cap and has minimum 3 characters'");
+		String lastname = sc.next();
+		String format = "^[A-Z]([a-z]+){2}$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher lastnamematch = pattern.matcher(lastname);
+		if (lastnamematch.matches()) {
+			System.out.println("LAST NAME SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
+	public void checkemail() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER EMAIL FOR VALIDATION");
+		System.out.println("(Email has 3 mandatory parts (abc, bl& co) and 2 optional (xyz & in) with\r\n"
+				+ "precise @ and . positions' E.g. abc.xyz@bl.co.in");
+		String email = sc.next();
+		String format = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.?-]+@[a-zA-Z0-9.-]+$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher emailmatch = pattern.matcher(email);
+		if (emailmatch.matches()) {
+			System.out.println("EMAIL NAME SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
 	
 }
