@@ -23,7 +23,6 @@ public class Main {
 			case 2:
 				user.checklastName();
 				break;
-			
 			case 3:
 				run = false;
 				break;
