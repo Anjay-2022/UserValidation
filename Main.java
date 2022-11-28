@@ -15,7 +15,9 @@ public class Main {
 		while (run) {
 			System.out.println(
 
+
 					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.E_MAIL\n4.MOBILE NUMBER\n5.PASSWORD\n6.EXIT");
+
 
 			int option = sc.nextInt();
 			switch (option) {
