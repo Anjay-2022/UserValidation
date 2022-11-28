@@ -25,15 +25,14 @@ public class Main {
 			case 2:
 				user.checklastName();
 				break;
-		case 3:
+			case 3:
 				user.checkemail();
 				break;
 			case 4:
-
 				user.checkmobileno();
 				break;
 			case 5:
-	 			run = false;
+				run = false;
 				break;
 			default:
 				System.out.println("choose correct option");
