@@ -14,14 +14,17 @@ public class Main {
 
 		while (run) {
 			System.out.println(
-					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.EXIT");
+					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.EXIT");
 			int option = sc.nextInt();
 			switch (option) {
 			case 1:
 				user.checkFirstName();
 				break;
-			
 			case 2:
+				user.checklastName();
+				break;
+			
+			case 3:
 				run = false;
 				break;
 			default:

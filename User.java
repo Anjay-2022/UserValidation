@@ -22,5 +22,21 @@ public class User {
 			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
 	}
 
+	public void checklastName() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER LAST NAME FOR VALIDATION");
+		System.out.println("(It should be in format of 'First name starts with Cap and has minimum 3 characters'");
+		String lastname = sc.next();
+		String format = "^[A-Z]([a-z]+){2}$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher lastnamematch = pattern.matcher(lastname);
+		if (lastnamematch.matches()) {
+			System.out.println("LAST NAME SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
+	
+
 	
 }
