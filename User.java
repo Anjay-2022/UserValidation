@@ -1,5 +1,6 @@
 package userValidation;
 
+
 import java.util.Scanner;
 
 public class User {
@@ -29,7 +30,6 @@ public class User {
 			System.out.println("Your last Name is Validate successfully");
 		} else
 			System.out.println("Unsuccessfull, try again ");
-
 	}
 
 	public void email() {
@@ -43,7 +43,6 @@ public class User {
 			System.out.println("Your Email is Validate successfully");
 		} else
 			System.out.println("Unsuccessfull, try again ");
-
 	}
 
 	public void password() {
@@ -57,7 +56,6 @@ public class User {
 			System.out.println("Your password is Validate successfully");
 		} else
 			System.out.println("Unsuccessfull, try again ");
-
 	}
 
 	public void mobileno() {
@@ -70,8 +68,6 @@ public class User {
 		if (result) {
 			System.out.println("Your mobile number is Validate successfully");
 		} else
-			System.out.println("Unsuccessfull, try again ");
-
+ 	   	System.out.println("Unsuccessfull, try again ");
 	}
-
 }
