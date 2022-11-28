@@ -14,7 +14,9 @@ public class Main {
 
 		while (run) {
 			System.out.println(
+
 					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.E_MAIL\n4.MOBILE NUMBER\n5.EXIT");
+
 			int option = sc.nextInt();
 			switch (option) {
 			case 1:
@@ -23,15 +25,15 @@ public class Main {
 			case 2:
 				user.checklastName();
 				break;
-			case 3:
+		case 3:
 				user.checkemail();
 				break;
 			case 4:
+
 				user.checkmobileno();
 				break;
 			case 5:
-				
-				run = false;
+	 			run = false;
 				break;
 			default:
 				System.out.println("choose correct option");
