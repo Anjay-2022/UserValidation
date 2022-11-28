@@ -2,8 +2,6 @@ package userValidation;
 
 import java.util.Scanner;
 
-import day19.User;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,25 +12,23 @@ public class Main {
 
 		while (run) {
 			System.out.println(
-
 					"CHOOSE THE OPTION FOR VALIDATION OF: \n1.FIRST NAME\n2.LAST NAME\n3.E_MAIL\n4.MOBILE NUMBER\n5.PASSWORD\n6.EXIT");
-
 			int option = sc.nextInt();
 			switch (option) {
 			case 1:
-				user.checkFirstName();
+				user.FirstName();
 				break;
 			case 2:
-				user.checklastName();
+				user.lastName();
 				break;
 			case 3:
-				user.checkemail();
+				user.email();
 				break;
 			case 4:
-				user.checkmobileno();
+				user.mobileno();
 				break;
 			case 5:
-				user.checkpassword();
+				user.password();
 				break;
 			case 6:
 				run = false;
@@ -43,5 +39,4 @@ public class Main {
 		}
 
 	}
-
 }
