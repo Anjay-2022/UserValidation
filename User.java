@@ -51,5 +51,34 @@ public class User {
 			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
 	}
 
-	
+	public void checkpassword() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER PASSWORD FOR VALIDATION");
+		System.out.println("(It should be in format of 'minimum 8 Characters and Should have at least Upper Case \r\n"
+				+ "Should have at least 1 numeric number in the password and has 1 special character '");
+		String password = sc.next();
+		String format = "^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher passwordmatch = pattern.matcher(password);
+		if (passwordmatch.matches()) {
+			System.out.println("PASSWORD  SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
+	public void checkmobileno() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENTER MOBILE NUMBER  FOR VALIDATION");
+		System.out.println("(It should be in format of 'Mobile Format - E.g. +919919819801\r\n"
+				+ "Country code follow by 10 digit number')");
+		String mobile = sc.nextLine();
+		String format = "^[+](91)\\s[6-9][0-9]{9}$";
+		Pattern pattern = Pattern.compile(format);
+		Matcher mobilematch = pattern.matcher(mobile);
+		if (mobilematch.matches()) {
+			System.out.println("MOBILE NUMBER SUCCESSFULLY MATCH");
+		} else
+			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
+	}
+
 }
