@@ -30,7 +30,9 @@ public class Main {
 				user.checkmobileno();
 				break;
 			case 5:
-				
+				user.checkpassword();
+				break;	
+			case 6:
 				run = false;
 				break;
 			default:
