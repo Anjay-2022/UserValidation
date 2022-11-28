@@ -51,6 +51,7 @@ public class User {
 			System.out.println("YOU HAVE ENTER IN WRONG FORMAT");
 	}
 
+
 	public void checkpassword() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("ENTER PASSWORD FOR VALIDATION");
